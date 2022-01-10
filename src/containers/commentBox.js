@@ -3,7 +3,8 @@ import CommentList from '../components/CommentList';
 
 const CommentBox = () => {
     const [comments, setComments] = useState([
-
+        //this data could come from API or database.
+        //hard coding data:
       {
         id: 1,
         author: "Rick Henry",
@@ -21,7 +22,7 @@ const CommentBox = () => {
         <>
             
         <h1>Comment Box</h1>
-        <CommentList  Comments={comments} />
+        <CommentList  comments={comments} />
         </>
     )
 }
