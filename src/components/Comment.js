@@ -2,9 +2,12 @@ import React from 'react';
 
 
 
-const Comment = ( ) => {
+const Comment = ({author,children} ) => {
     return (
-        <p>I am a comment</p>
+       <>
+           <h4>{author}</h4>
+           <p>{children} </p>
+       </>
     )
 
 }
