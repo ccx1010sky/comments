@@ -1,5 +1,6 @@
 import React ,{useState} from 'react';
 import CommentList from '../components/CommentList';
+import CommentForm from '../components/CommentForm';                                     
 
 const CommentBox = () => {
     const [comments, setComments] = useState([
@@ -23,6 +24,7 @@ const CommentBox = () => {
             
         <h1>Comment Box</h1>
         <CommentList  comments={comments} />
+        <CommentForm />
         </>
     )
 }
