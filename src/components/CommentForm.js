@@ -13,6 +13,23 @@ const CommentForm = () =>{
 
    }
 
+   const handleFormSubmit = (event) => {
+    event.preventDefault()
+    const authorToSubmit = author.trim()
+    const textToSubmit = text.trim()
+    if (!authorToSubmit || !textToSubmit){
+        return
+    }
+    //Todo finish this part
+
+
+
+
+    setAuthor("");
+    setText("");
+
+   }
+
 return(
     <form>
         <input 
