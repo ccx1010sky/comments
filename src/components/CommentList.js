@@ -1,9 +1,14 @@
 import React from 'react';
+import Comment from "./Comment.js";
 
 const CommentList = ( ) => {
 
     return (
-        <h3>I am  comment List</h3>
+        <> 
+        <h3>comment List</h3>
+        <Comment/>
+        <Comment/>
+        </>
     )
 }
 
