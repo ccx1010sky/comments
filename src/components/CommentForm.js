@@ -1,9 +1,10 @@
 import React,{useState} from "react";
 
-const CommentForm = () =>{
+const CommentForm = ({onCommentSubmit}) =>{
 
     const [author, setAuthor] = useState("");
     const [text, setText] = useState("");
+
    const handleAuthorChange = (event) =>{
        setAuthor(event.target.value)
 
@@ -21,10 +22,13 @@ const CommentForm = () =>{
         return
     }
     //Todo finish this part
+    onCommentSubmit(
+        {
+            author:authorToSubmit,
+            text:textToSubmit
+        }
 
-
-
-
+    )
     setAuthor("");
     setText("");
 
