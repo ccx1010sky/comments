@@ -31,7 +31,7 @@ const CommentForm = () =>{
    }
 
 return(
-    <form>
+    <form className="comment-form" onSubmit={handleFormSubmit}>
         <input 
             type="text" 
             placeholder="Your name"
