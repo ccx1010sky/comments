@@ -1,9 +1,11 @@
 // import logo from './logo.svg';
 import './App.css';
+import CommentBox from './containers/commentBox';
 
 function App() {
   return (
-    <h1>Hello World</h1>
+   <CommentBox />
+
   );
 }
 
